@@ -14,8 +14,7 @@
 	//   "globals": ["$", "_", "React", "JSX", "__DEV__"],
 	// },
 	"formatter": {
-		"enabled": true,
-		"indentStyle": "tab"
+		"enabled": true
 	},
 	"linter": {
 		"enabled": true,
