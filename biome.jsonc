@@ -1,0 +1,64 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"vcs": {
+		"clientKind": "git",
+		"useIgnoreFile": true,
+		"enabled": true,
+		"defaultBranch": "main"
+	},
+	"organizeImports": { "enabled": true },
+	// "files": {
+	//   "ignore": ["**/__generated__/**"],
+	// },
+	// "javascript": {
+	//   "globals": ["$", "_", "React", "JSX", "__DEV__"],
+	// },
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab"
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"correctness": {
+				"useExhaustiveDependencies": "warn",
+				"noUnusedImports": "warn",
+				"noUnusedVariables": "warn",
+				"noUndeclaredVariables": "off"
+			},
+			"style": {
+				"noNonNullAssertion": "warn",
+				"noNamespaceImport": "warn",
+				"noNamespace": "warn",
+				"useBlockStatements": "warn",
+				"useShorthandArrayType": "warn"
+			},
+			"suspicious": {
+				"noExplicitAny": "warn",
+				"noArrayIndexKey": "warn",
+				"noImplicitAnyLet": "warn",
+				"noConsoleLog": "warn",
+				"noEmptyBlockStatements": "warn",
+				"useAwait": "warn"
+			},
+			"complexity": {
+				"noForEach": "warn",
+				"noUselessCatch": "warn",
+				"useSimplifiedLogicExpression": "error",
+				"noUselessFragments": "warn",
+				"useArrowFunction": "error"
+			},
+			"nursery": {
+				"useSortedClasses": {
+					"level": "warn",
+					"fix": "safe",
+					"options": {
+						"attributes": ["classList"],
+						"functions": ["clsx", "cva", "tw", "cn"]
+					}
+				}
+			}
+		}
+	}
+}
