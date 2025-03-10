@@ -24,9 +24,12 @@ export default function Home() {
 						priority
 					/>
 				</div>
-				<ul className="list-inside list-disc text-center font-[family-name:var(--font-geist-mono)] text-sm sm:text-left">
+				<ul className="max-w-sm list-outside list-disc text-center font-[family-name:var(--font-geist-mono)] text-sm sm:text-left">
 					<li className="mb-2">NextJS with the flavour of Bun and BiomeJS.</li>
-					<li>Save and see your changes instantly.</li>
+					<li className="">
+						Yoink prettier and eslint 4evaaa! choose better formatting and
+						linting with BiomeJS
+					</li>
 				</ul>
 			</main>
 			<footer className="row-start-3 flex flex-wrap items-center justify-center gap-6 rounded-2xl p-4 shadow-2xl shadow-black/20">
