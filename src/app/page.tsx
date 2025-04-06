@@ -8,7 +8,7 @@ export default function Home() {
 			<main className="row-start-2 flex flex-col items-center gap-8 sm:items-start">
 				<div className="flex gap-2">
 					<Image
-						className="object-contain dark:invert"
+						className="object-contain "
 						src="/logo-centered.svg"
 						alt="Next.js logo"
 						width={100}
@@ -24,15 +24,30 @@ export default function Home() {
 						priority
 					/>
 				</div>
-				<ul className="max-w-sm list-outside list-disc text-center font-[family-name:var(--font-geist-mono)] text-sm sm:text-left">
+
+				<ul className="max-w-sm list-outside list-disc text-left font-[family-name:var(--font-geist-mono)] text-sm">
 					<li className="mb-2">NextJS with the flavour of Bun and BiomeJS.</li>
 					<li className="">
 						Yoink prettier and eslint 4evaaa! choose better formatting and
 						linting with BiomeJS
 					</li>
 				</ul>
+
+				<div className="grid w-full max-w-sm grid-cols-3 gap-4 ">
+					{["/tailwind.svg", "/vercel.png", "/biome-white.svg"].map((i) => (
+						<Image
+							src={i}
+							alt="Tailwind"
+							width={100}
+							height={100}
+							priority
+							key={i}
+							className="h-20 w-full rounded-2xl bg-white/5 object-contain px-4"
+						/>
+					))}
+				</div>
 			</main>
-			<footer className="row-start-3 flex flex-wrap items-center justify-center gap-6 rounded-2xl p-4 shadow-2xl shadow-black/20">
+			<footer className="row-start-3 flex w-full max-w-sm flex-wrap items-center justify-between gap-6 rounded-2xl p-4 shadow-2xl shadow-black/20 dark:bg-white/5">
 				<div className="flex w-fit items-center gap-2 ">
 					<Image
 						src={"/cat.jpg"}
